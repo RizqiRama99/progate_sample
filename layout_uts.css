@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #ccccff;
+}
+
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+li {
+  float: left;
+
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover {
+  background-color: #4d88ff;
+  transition: 1s;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+ background-color: #1a1a1a;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: 1s;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #4d88ff;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #ccccff;
+  padding-left: 20px;
+}
+
+
+.card {
+  background-color: white;
+  padding: 20px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+form 
+  { 
+    display: grid; 
+    padding: 1em; 
+    background: grey; 
+    border: 1px solid #c1c1c1; 
+    margin: 2rem auto 0 auto; 
+    max-width: 600px; 
+    padding: 1em; 
+  } 
+  form input { 
+    background: #fff; 
+    border: 1px solid #9c9c9c; 
+  }
+   form button { 
+    background: #fff; 
+    padding: 0.7em;
+    border-radius: 10px; 
+    width: 100%; 
+  } 
+  form button:hover { 
+    background: aquamarine; 
+  } label { padding: 0.5em 0.5em 0.5em 0; 
+  } input { padding: 0.7em; 
+  margin-bottom: 0.5rem; 
+  } input:focus { 
+  outline: 3px solid gold; 
+  } @media (min-width: 400px) { 
+  form { grid-template-columns: 200px 1fr; 
+  grid-gap: 16px; 
+  }
+
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
